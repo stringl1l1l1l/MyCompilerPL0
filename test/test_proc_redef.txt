@@ -1,0 +1,36 @@
+program a;
+var x;
+procedure B(n);
+    var x;
+    procedure B(n);
+    var x;
+        procedure B(n);
+        var x;
+            procedure B(n);
+            var x;
+            begin
+                x:=1
+            end
+        begin
+            x:=1
+        end
+    begin
+        x:=1
+    end;
+    procedure B(n);
+    var x;
+    begin
+        x:=1
+    end;
+    procedure B(n);
+    var x;
+    begin
+        x:=1
+    end
+begin
+    x:=1
+end
+
+begin
+    x:=1
+end

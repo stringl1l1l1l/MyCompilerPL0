@@ -1,0 +1,31 @@
+program a;
+var x;
+procedure B(n);
+    procedure C(n);
+        procedure E(n);
+        begin
+            x := n-1;
+            write(x)
+        end
+    begin
+        x:= n-1;
+        write(x)
+    end;
+    procedure D(n);
+    begin
+        x:= n-1;
+        write(x);
+        call C(x);
+        call B(x)
+    end
+begin
+    x:= n-1;
+    write(x);
+    call D(x)
+end
+
+begin
+    x := 0;
+    call B(x);
+    write(x)
+end

@@ -1,0 +1,28 @@
+program p;
+const a:=1;
+var n, res, i;
+    procedure fib(a,b,c,n);
+    var sum;
+    begin
+        sum := 0;
+        if n<2 then
+            res := 1
+        else
+        begin
+            call fib(a,b,c,n-1);
+            sum := sum + res;
+            call fib(a,b,c,n-2);
+            sum := sum + res;
+            res := sum
+        end
+    end
+begin
+    i:=0;
+    read(n);
+    while i<=n do
+    begin
+        call fib(1,2,3,i);
+        write(res);
+        i := i+1
+    end
+end
